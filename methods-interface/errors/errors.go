@@ -19,7 +19,7 @@ func (e *MyError) Error() string {
 
 // run函数的返回类型是error接口
 // run函数中实例化了一个MyError结构体，并返回结构体实例的引用。
-// 注意：如果MyError结构体没有实现error接口的Error方法，run函数中返回MyError结构体实例的引用将引起语法错误。
+// 注意：如果MyError结构体没有实现error接口的Error方法，run函数中返回MyError结构体实例的引用将引起语法错误
 func run() error {
 
 	temp := &MyError{
